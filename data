@@ -1,0 +1,2459 @@
+<table class="table table-bordered table-hover table-condensed">
+<tbody><tr>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>D</td>
+<td>E</td>
+<td>M</td>
+<td>N</td>
+</tr>
+<tr>
+<td>RANK </td>
+<td>instructions</td>
+<td>Generate Conditon</td>
+<td>Message</td>
+<td>Answers Buttons</td>
+<td>Encompass Field </td>
+<td>NOTES</td>
+</tr>
+<tr>
+<td>Loan officer</td>
+<td>fill in</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>317</td>
+<td> </td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>fill in</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>36 and 37</td>
+<td> </td>
+</tr>
+<tr>
+<td>Loan Number</td>
+<td>fill in</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>364</td>
+<td> </td>
+</tr>
+<tr>
+<td>Loan Purpose</td>
+<td>drop down values are in E5 and F5 A16. If E5 is true go to 16A for refi question 1. If F5 is true go toA6 for purchase qestion 1</td>
+<td> </td>
+<td> </td>
+<td>Refi</td>
+<td>9</td>
+<td> </td>
+</tr>
+<tr>
+<td>If purchase do we have fully executed Contract?</td>
+<td>question 1 for purchase Yes no question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If No</td>
+<td>generate conditon and store condtion for the end use message in column D line 7</td>
+<td>yes</td>
+<td>please upload purchase contract prior to submission or file will get kicked back</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes proceed</td>
+<td>go to next question for purchase starts field A10</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If purchase do we have proof that deposit on sales contract was paid</td>
+<td>question 2 for purchaseYes no question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no </td>
+<td>generate conditon and store condtion for the end use message in column D line 11. then place prompt on line 14 and go to Occupancy Starting on A30</td>
+<td>yes</td>
+<td>please upload proof of earnest money deposit or file will get kicked back</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes proceed</td>
+<td>go to next question on occupance Field A30 after placing prompt on a14</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If purchase please input real estate agent contact info in encompass</td>
+<td>Prompt displayed with yes or no to prior purchase questions. Then next button.</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Refi  Purpose</td>
+<td>Question 1 for Refi dro down values are E16 and F16</td>
+<td> </td>
+<td> </td>
+<td>Cash Out</td>
+<td>299</td>
+<td> </td>
+</tr>
+<tr>
+<td>Do you have a copy of most recent mortgage statement</td>
+<td>Question 2 refi </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF no</td>
+<td>Generate condition and store condition fo rend use message in D12 .</td>
+<td>yes</td>
+<td>Please Get Copy Of Most Recent Mortgage Statement </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes proceed next </td>
+<td>go to next question in field A21</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>CCM Serviced</td>
+<td>drop down yes or no Value in E21 and F21. IF F21 is true go to occupancy question in A30. If E21 is true go to next question in A22</td>
+<td> </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If CCM serviced and Refi are we atleast 100 days from last closing date</td>
+<td>Drop down yes or no value E22 and F22 .</td>
+<td> </td>
+<td> </td>
+<td>YES</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no </td>
+<td>generate condition and store condition in D23 then go to question in A26</td>
+<td>Yes</td>
+<td>Get mananger approval on seasoning prior to proceedding. CCM serviced</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next question </td>
+<td>next question would be A26 question. </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If CCM serviced and purchase are they eligible for buy now refi later </td>
+<td>drop down yes or no column E26 and F26</td>
+<td> </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes generate cert from L.O 1 (link)</td>
+<td>If yes generate URL and store for final conditon st then proceed to A30 question</td>
+<td>Yes</td>
+<td>generate url of https://loanofficer.crosscountrymortgage.com/app/refi-later/</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no proceed </td>
+<td>proceed to A30 Question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Occupancy Type</td>
+<td>Occupancy question 1: occupancy drop down values are in E30, F30, G30  then proceed to Property type qestion 1 field A31</td>
+<td> </td>
+<td> </td>
+<td>Investment</td>
+<td>1811</td>
+<td> </td>
+</tr>
+<tr>
+<td>Property Type</td>
+<td>Property type question 1:for property type values are in E31, F31, G31, H31, I31, J31, K31, L31</td>
+<td> </td>
+<td> </td>
+<td>Single</td>
+<td>728</td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Is property in HOA</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If NO NEXT </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If property is in HOA is Yes : Do you have proof HOA dues?  Or NO HOA due letter for no streamline refi. </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If NO we need </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next question </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If property is 3-4 unit does it pass self sufficiency test </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If No you can not proceed </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes proceed </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If property is manfuaacted: Do we have foundation cert? </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF no order customer must pay (link to harrison)</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes proceed </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Loan type</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>fha </td>
+<td>1063</td>
+<td> </td>
+</tr>
+<tr>
+<td>If Loan Type is NON QM, SECOND, OR JUMBO : Are transcripts ordered</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes please check to make sure transcripts are ordered to match all income being used to qualify </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if NO please order to proceed </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF Fha or VA doc type</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>streamline</td>
+<td>299</td>
+<td> </td>
+</tr>
+<tr>
+<td>If FHA do we have case number</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>3042</td>
+<td> </td>
+</tr>
+<tr>
+<td>If NO order before you proceed</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next step</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If we have case number do we meet seasoning requirements</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>3042</td>
+<td> </td>
+</tr>
+<tr>
+<td>If purchase must be 90 days from previous title transfer see lien history</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>3042</td>
+<td> </td>
+</tr>
+<tr>
+<td>If no loan needs manager approval </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If refinance must be 12 months from purchase date to use appraised value</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>3042</td>
+<td> </td>
+</tr>
+<tr>
+<td>If no loan needs manager approval </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If FHA and Cash Out Or nO Cash out do we have any disputes on credit</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If answer above is YES disputes need to be removed or downgraded to manual UW</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF conv, va, fha and not streamline or irrrl </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Do we have student loans</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes : In review of credit report and liabilites are we following proper student loan guidelines to calculate payments (link to guides)</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If VA do we have case number</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>3042</td>
+<td> </td>
+</tr>
+<tr>
+<td>If NO we need it to proceed</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If FHA has the customer made 6 payments and are they 210 days away from prior closing date see lien history</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If No we need to meet seasoning to proceed </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If VA has the customer made 6 payments and are they 210 days away from current loan first payment date</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If NO to above  we need it to proceed</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next step </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF loan type is FHA streamline or VA Streamline or  3 questions below</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Do we have most recent mortgage statement</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Do we have mortgage note from current loan </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If above is no we need to proceed</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If FHA streamline do we have a netted payoff for escrows </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no please verify with loan officer before proceeding</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF USDA Streamline do we have USDA Case Number</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>3042</td>
+<td> </td>
+</tr>
+<tr>
+<td>If no order before proceeding </td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If USDA Streamline  has the customer lived in home for past 12 months</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no manager review before proceeding </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If USDA Streamline do we have the most recent mortgage statement</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no manager review before proceeding </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If USDA Streamline do we have most recent paystbus</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no manager review before proceeding , or transcripts, tax returns, from prior tax year.</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF USDA Streamline do we have the mortgage note from current loan</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no manager review before proceeding </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>AUS UW TYPE</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Finding Type</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>DU </td>
+<td>AUSF.X1 and AUSF.X3</td>
+<td> </td>
+</tr>
+<tr>
+<td>If FHA, VA, CONV, USDA  and Doc Type Full Doc do we have approved findings</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>AUSF.X1 and AUSF.X3</td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes proceed </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If NO   and conventionl get with manager before proceeding </td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If NO and FHA do we meet FHA Manual UW Guides (link)</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If NO VA  do we meet VA manual guidelines including residual (link)</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If finding Type question above was a NO for FHA or VA </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>FHA VA ONLY If no:  do we have LOE addressing all deragotry debt on credit. Not just a blanket letter an actual letter of explanation.</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no please get before proceeding </td>
+<td> </td>
+<td>Yes</td>
+<td>LOE must be clear, it must state why each incident happened, how it happened, what the customer is doing to do to stop it from happening going forward, and how their life is better today. </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes please thoroughly review and while revieiwing credit and make sure it makes snese</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If VA manual do we have more than one late payment, collection, or any derogatory event in last 12 months? </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If above Yes do not proceed </td>
+<td> </td>
+<td>Yes</td>
+<td>LOE must be clear, it must state why each incident happened, how it happened, what the customer is doing to do to stop it from happening going forward, and how their life is better today. </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If above no proceed </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Appraisal</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF CONV and DU or LP Do we need an appraisal</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF No the appraisal and CONV loan type next questions .question </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Do we have not listed LOE</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF no please send not listed LOE to customer through blend let L.O know they need to sign, upload unsigned letter to Encompass to proceed </td>
+<td> </td>
+<td>Yes</td>
+<td>Type Not Listed LOE send to customer in blend </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If We need an appraisal Is the what is status </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>CX.CSS.APPRAISALORD and CX.CSS.APPRAISALRCVD</td>
+<td> </td>
+</tr>
+<tr>
+<td>If Appraisal not ordered do not proceed if refi</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If appraisl is received please revview value and update encompass and look for any subject to conditions, please make sure to review pictures and look for cost to cure. </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If appraisal ordered Does AVM value support appraised value in encompass (click link AVM) </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>356</td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes proceed </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no You cant proceed </td>
+<td> </td>
+<td>Yes</td>
+<td>Pull AVM in LO1 Share with L.O go over value </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Title  </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Title Status</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>411</td>
+<td> </td>
+</tr>
+<tr>
+<td>If Title is not ordered order title before proceeding and view lien status (click link for lien history)</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If title is ordered but not received please view lien status (click link for lien history)</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Title Received Did you review lien history (pop of lien example)</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>No</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF TITLE IS Received or Lien history is in review: is their any additional liens that are not getting paid off in encompass</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes please stop get with manager</td>
+<td> </td>
+<td>Yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Refi anytype do owners on title or lien history match our borrower </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF no stop do not proceeed </td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Refi do we have a mortgage payoff? </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes please review to make sue payoff next due is valid and current also look for negative escrow balance </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Payoff is no in please follow up</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Payoff is not received do not proceed with submission</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF Refi Are we paying off additonal items (excluding revolving debt)</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if yes do we have a payoff or payoff gurantee </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no please complete payoff gurantee (link to payoff gurantee </td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Refi Are there collection or charge offs being paid</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF no next question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if yes do we have payoffs or payoff gurantees</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Refi Are there additional liens being paid off</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes  do we have payoff or payoff gurantee</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no please complete payoff gurantee ( link to payoff gurantee</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Income</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>INCOME Borrower</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>W2</td>
+<td>military</td>
+<td>rental</td>
+</tr>
+<tr>
+<td>INCOME Co borrower</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>W2</td>
+<td>military</td>
+<td>rental</td>
+</tr>
+<tr>
+<td>If w2 has borrower had more than one job in past two years</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes please make sure you have all w2s not just most recent. PROMPT INPUT FOR HOW MANY JOBS</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If above input value is greater than 0 please validate for all jobs</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes please validate customer meets all job gaps</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if w2 do we have latest 30 days paystubs</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes to question next</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF w2 do we have VOE for all employers from past 2 years</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if Schedule C do we have latest two years tax returns</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes  next question </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Schedule C please review the taxes owed. Is there taxes owed on the Return?</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If taxes owed is yes we need proof to proceed</td>
+<td> </td>
+<td>yes</td>
+<td>please validate with transcripts or proof from customer </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If S Corp do we have latest two years tax returns</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If S corp do we have latest two years k1</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If S corp do we have latest to years S Corp Return</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If S Corp do we have compensation to officers</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If S Corp compensation to offers does customer have wages on tax return</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if yes we need proof of w2 to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If S Corp please review the taxes owed?. Is there taxes owed on the Return? PERSONAL AND S CORP</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td>please validate with transcripts or proof from customer </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If C Corp do we have latest two years tax returns</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If C Corp do we have latest two years k1</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If C Corp do we have latest to years C Corp Return</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If C Corp do we have compensation to officers</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next question</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If C Corp compensation to offers does customer have wages on tax return</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if yes we need proof of w2 to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If C Corp please review the taxes owed?. Is there taxes owed on the Return? PERSONAL AND C Corp</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td>please validate with transcripts or proof from customer </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Corp do we have latest two years tax returns</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Corp do we have latest two years Schedue G that shows ownership</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next question </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Corp do we have latest to years Corp Return</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next question </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Corp do we have compensation to officers</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if yes we need proof of w2 to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Corp Is there compensation to offers does customer have wages on tax return</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if yes we need proof of w2 to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If C Corp please review the taxes owed?. Is there taxes owed on the Return? PERSONAL AND C Corp</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td>please validate with transcripts or proof from customer </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Partnership do we have latest two years tax returns</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Partnership do we have latest two years Schedue G that shows ownership</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next question </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Partnership do we have latest to years Partnership Return</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes next question </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Partnership do we have compensation to officers</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if yes we need proof of w2 to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Partnership Is there compensation to offers does customer have wages on tax return</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if yes we need proof of w2 to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If C Partnership please review the taxes owed?. Is there taxes owed on the Return? PERSONAL AND C Partnership</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td>please validate with transcripts or proof from customer </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF SSI , Pension, Military : Do we have two months bank statements documenting deposits? </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no need to proeed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If rental income: Do we have most recent two years tax returns?</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If rental income: Do we have mortgage statements for any property on schedule E that shows on Part 1 Line 12</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>No We need to proeceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Yes or Not needed No MTG on Schedule E</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Do we have proof that any free and clear properties that they are free clear </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Assets </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Are assets required for your loan? (if encompass field xxxxx shows cash to close do not ask this question) or findings say we need reserves?</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no move to credit</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes : is there any irregular deposits or NSF&#39;s on bank statmenets? </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If Yes We cant proceed without more info</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Credit</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Do we have credit supplements for all mortgages lsited on credit showing last paid next due? (even purchase verify no mortgage that is still on credit)</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If No this needs to be ordered and received to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If above is yes. Next</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Does the credit supplemtn show current with no lates that would stop us from closing loan?</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>IF yes validate with L.O and customeer re order supp. Look  at payoff and mortgage statement </td>
+<td> </td>
+<td>YEs</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>if no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Do we have a complete Credit Inqiry work sheet?</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no we need to proceed</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Does the credit inqiriy worksheet make sense? </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>No: Update with L.O and Customer</td>
+<td> </td>
+<td>YEs</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Yes next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Is there a possibility that the customer has opened up any new debt?</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If yes we need more info</td>
+<td> </td>
+<td>yes</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>If no next </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>GENERATE CONDITIONS BASED ON B COLUMB </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody></table>
